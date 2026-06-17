@@ -1,0 +1,5 @@
+2026-05-08 11:11:37,092 INFO [user:1] [backend:ml] ML reply prepared; perf=27.03
+2026-05-08 11:14:41,103 INFO [user:1] [backend:ml] ML reply prepared
+2026-05-08 11:14:41,103 INFO [user:1] [backend:ml] {"prompt_hash": "f4cd5de8", "pred": 27.03}
+2026-05-08 11:14:41,841 INFO [user:1] [backend:ml] ML reply completed
+2026-05-08 11:14:41,841 INFO [user:1] [backend:ml] {"prompt_hash": "f4cd5de8", "duration": 0.785858154296875}

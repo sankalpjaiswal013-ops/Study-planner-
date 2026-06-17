@@ -1,0 +1,337 @@
+2026-05-08 11:20:38,950 INFO {"event": "ml_prepare", "user": 1, "prompt_hash": "f4cd5de8", "pred": 27.03}
+2026-05-08 11:20:39,511 INFO {"event": "ml_complete", "user": 1, "prompt_hash": "f4cd5de8", "duration": 0.5751957893371582}
+2026-05-08 11:23:44,080 INFO {"event": "ml_prepare", "user": 1, "prompt_hash": "f4cd5de8", "pred": 27.03}
+2026-05-08 11:23:44,636 INFO {"event": "ml_complete", "user": 1, "prompt_hash": "f4cd5de8", "duration": 0.5739755630493164}
+2026-05-08 11:34:09,447 INFO {"event": "ml_prepare", "user": 1, "prompt_hash": "9122f35c", "pred": 88.5}
+2026-05-08 11:34:10,096 INFO {"event": "ml_complete", "user": 1, "prompt_hash": "9122f35c", "duration": 0.6489889621734619}
+2026-05-08 11:34:10,102 INFO {"event": "api_call_start", "user": 1, "prompt_hash": "3d098ea1", "api_key_masked": "********_KEY"}
+2026-05-08 11:34:10,168 INFO {"event": "api_call_end", "user": 1, "prompt_hash": "3d098ea1", "duration": 0.06595230102539062}
+2026-05-08 11:34:10,978 INFO {"event": "mock_used", "user": 1, "prompt_hash": "fdf58466"}
+2026-05-08 12:13:10,981 INFO Training model type=rf rows=24
+2026-05-08 12:13:13,452 INFO Training model type=rf rows=24
+2026-05-08 12:14:32,776 INFO Training model type=rf rows=24
+2026-05-08 12:14:33,113 INFO {"event": "model_trained", "model_path": "C:\\Users\\Lenovo\\Downloads\\studyplanner\\streamlit_app\\models\\student_performance.joblib", "metrics": {"rmse": 0.0, "r2": 1.0}}
+2026-05-08 12:14:58,853 INFO {"event": "ml_prepare", "user": 1, "prompt_hash": "817c61fe", "pred": 41.0}
+2026-05-08 12:14:59,779 INFO {"event": "ml_complete", "user": 1, "prompt_hash": "817c61fe", "duration": 1.0455517768859863}
+2026-05-08 12:24:38,225 INFO {"event": "ml_prepare", "user": 1, "prompt_hash": "96bc4bcf", "pred": 41.0}
+2026-05-08 12:24:38,970 INFO {"event": "ml_complete", "user": 1, "prompt_hash": "96bc4bcf", "duration": 0.8293759822845459}
+2026-05-08 12:24:49,915 INFO Training model type=rf rows=24
+2026-05-08 12:24:50,196 INFO {"event": "model_trained", "model_path": "C:\\Users\\Lenovo\\Downloads\\studyplanner\\streamlit_app\\models\\student_performance.joblib", "metrics": {"rmse": 0.0, "r2": 1.0}}
+2026-05-08 12:30:37,714 INFO Training model type=rf rows=24
+2026-05-08 12:30:37,995 INFO {"event": "model_trained", "model_path": "C:\\Users\\Lenovo\\Downloads\\studyplanner\\streamlit_app\\models\\student_performance.joblib", "metrics": {"rmse": 0.0, "r2": 1.0}}
+2026-05-12 16:29:18,738 INFO {"event": "api_call_start", "user": 1, "prompt_hash": "00a14e45", "api_key_masked": "***********************************pu-0"}
+2026-05-12 16:29:18,777 ERROR api_error
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Downloads\studyplanner\streamlit_app\ai_helper.py", line 66, in _call_genai_stream
+    from google import genai as genai
+ImportError: cannot import name 'genai' from 'google' (unknown location)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Downloads\studyplanner\streamlit_app\ai_helper.py", line 183, in generate_ai_response
+    for chunk in _call_genai_stream(api_key, final_prompt):
+  File "C:\Users\Lenovo\Downloads\studyplanner\streamlit_app\ai_helper.py", line 68, in _call_genai_stream
+    raise RuntimeError("google.genai SDK not installed. Install `google-genai` and try again.")
+RuntimeError: google.genai SDK not installed. Install `google-genai` and try again.
+2026-05-12 16:29:18,779 INFO {"event": "api_error", "user": 1, "prompt_hash": "00a14e45"}
+2026-05-12 16:29:19,596 INFO {"event": "mock_used", "user": 1, "prompt_hash": "00a14e45"}
+2026-05-12 16:50:47,549 INFO {"event": "api_call_start", "user": 1, "prompt_hash": "8f434346", "api_key_masked": "***********************************pu-0"}
+2026-05-12 16:50:47,551 ERROR api_error
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Downloads\studyplanner\streamlit_app\ai_helper.py", line 66, in _call_genai_stream
+    from google import genai as genai
+ImportError: cannot import name 'genai' from 'google' (unknown location)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Downloads\studyplanner\streamlit_app\ai_helper.py", line 183, in generate_ai_response
+    for chunk in _call_genai_stream(api_key, final_prompt):
+  File "C:\Users\Lenovo\Downloads\studyplanner\streamlit_app\ai_helper.py", line 68, in _call_genai_stream
+    raise RuntimeError("google.genai SDK not installed. Install `google-genai` and try again.")
+RuntimeError: google.genai SDK not installed. Install `google-genai` and try again.
+2026-05-12 16:50:47,554 INFO {"event": "api_error", "user": 1, "prompt_hash": "8f434346"}
+2026-05-12 16:50:48,364 INFO {"event": "mock_used", "user": 1, "prompt_hash": "8f434346"}
+2026-05-15 09:39:11,749 INFO Training model type=rf rows=24
+2026-05-15 09:39:11,834 INFO {"event": "model_trained", "model_path": "C:\\Users\\Lenovo\\Downloads\\studyplanner\\streamlit_app\\models\\student_performance.joblib", "metrics": {"rmse": 5.3076423870051155, "r2": 0.0}}
+2026-05-15 09:39:11,883 INFO Timetable ML model trained and saved to C:\Users\Lenovo\Downloads\studyplanner\streamlit_app\models\timetable_model.joblib
+2026-05-15 09:39:53,772 INFO {"event": "ml_prepare", "user": 1, "prompt_hash": "00a14e45", "pred": 12.44}
+2026-05-15 09:39:54,581 INFO {"event": "ml_complete", "user": 1, "prompt_hash": "00a14e45", "duration": 0.8781001567840576}
+2026-05-15 09:40:06,718 INFO Training model type=rf rows=24
+2026-05-15 09:40:06,942 INFO {"event": "model_trained", "model_path": "C:\\Users\\Lenovo\\Downloads\\studyplanner\\streamlit_app\\models\\student_performance.joblib", "metrics": {"rmse": 5.3076423870051155, "r2": 0.0}}
+2026-05-15 15:58:42,087 INFO {"event": "ml_prepare", "user": 1, "prompt_hash": "00a14e45", "pred": 12.44}
+2026-05-15 15:58:42,944 INFO {"event": "ml_complete", "user": 1, "prompt_hash": "00a14e45", "duration": 0.9301784038543701}
+2026-05-15 15:58:52,826 INFO {"event": "api_call_start", "user": 1, "prompt_hash": "204484c4", "api_key_masked": "***********************************pu-0"}
+2026-05-15 15:58:52,829 ERROR api_error
+Traceback (most recent call last):
+  File "c:\Users\Lenovo\Downloads\studyplanner\streamlit_app\ai_helper.py", line 66, in _call_genai_stream
+    from google import genai as genai
+ImportError: cannot import name 'genai' from 'google' (unknown location)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\Lenovo\Downloads\studyplanner\streamlit_app\ai_helper.py", line 183, in generate_ai_response
+    for chunk in _call_genai_stream(api_key, final_prompt):
+  File "c:\Users\Lenovo\Downloads\studyplanner\streamlit_app\ai_helper.py", line 68, in _call_genai_stream
+    raise RuntimeError("google.genai SDK not installed. Install `google-genai` and try again.")
+RuntimeError: google.genai SDK not installed. Install `google-genai` and try again.
+2026-05-15 15:58:52,833 INFO {"event": "api_error", "user": 1, "prompt_hash": "204484c4"}
+2026-05-15 15:58:53,640 INFO {"event": "mock_used", "user": 1, "prompt_hash": "204484c4"}
+2026-05-15 15:59:09,202 INFO Training model type=rf rows=24
+2026-05-15 15:59:09,441 INFO {"event": "model_trained", "model_path": "c:\\Users\\Lenovo\\Downloads\\studyplanner\\streamlit_app\\models\\student_performance.joblib", "metrics": {"rmse": 5.3076423870051155, "r2": 0.0}}
+2026-05-15 15:59:24,768 INFO {"event": "api_call_start", "user": 1, "prompt_hash": "d13f2ead", "api_key_masked": "***********************************pu-0"}
+2026-05-15 15:59:24,770 ERROR api_error
+Traceback (most recent call last):
+  File "c:\Users\Lenovo\Downloads\studyplanner\streamlit_app\ai_helper.py", line 66, in _call_genai_stream
+    from google import genai as genai
+ImportError: cannot import name 'genai' from 'google' (unknown location)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\Lenovo\Downloads\studyplanner\streamlit_app\ai_helper.py", line 183, in generate_ai_response
+    for chunk in _call_genai_stream(api_key, final_prompt):
+  File "c:\Users\Lenovo\Downloads\studyplanner\streamlit_app\ai_helper.py", line 68, in _call_genai_stream
+    raise RuntimeError("google.genai SDK not installed. Install `google-genai` and try again.")
+RuntimeError: google.genai SDK not installed. Install `google-genai` and try again.
+2026-05-15 15:59:24,773 INFO {"event": "api_error", "user": 1, "prompt_hash": "d13f2ead"}
+2026-05-15 15:59:25,580 INFO {"event": "mock_used", "user": 1, "prompt_hash": "d13f2ead"}
+2026-05-15 15:59:44,176 INFO {"event": "ml_prepare", "user": 1, "prompt_hash": "96bc4bcf", "pred": 12.44}
+2026-05-15 15:59:44,941 INFO {"event": "ml_complete", "user": 1, "prompt_hash": "96bc4bcf", "duration": 0.8545928001403809}
+2026-05-15 15:59:46,936 INFO {"event": "ml_prepare", "user": 1, "prompt_hash": "96bc4bcf", "pred": 12.44}
+2026-05-15 15:59:47,700 INFO {"event": "ml_complete", "user": 1, "prompt_hash": "96bc4bcf", "duration": 0.8448069095611572}
+2026-05-15 16:00:04,784 INFO {"event": "ml_prepare", "user": 1, "prompt_hash": "7bfeb9dd", "pred": 12.44}
+2026-05-15 16:00:05,539 INFO {"event": "ml_complete", "user": 1, "prompt_hash": "7bfeb9dd", "duration": 0.8345723152160645}
+2026-05-15 16:00:23,050 INFO {"event": "api_call_start", "user": 1, "prompt_hash": "39c1088b", "api_key_masked": "***********************************pu-0"}
+2026-05-15 16:00:23,053 ERROR api_error
+Traceback (most recent call last):
+  File "c:\Users\Lenovo\Downloads\studyplanner\streamlit_app\ai_helper.py", line 66, in _call_genai_stream
+    from google import genai as genai
+ImportError: cannot import name 'genai' from 'google' (unknown location)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\Lenovo\Downloads\studyplanner\streamlit_app\ai_helper.py", line 183, in generate_ai_response
+    for chunk in _call_genai_stream(api_key, final_prompt):
+  File "c:\Users\Lenovo\Downloads\studyplanner\streamlit_app\ai_helper.py", line 68, in _call_genai_stream
+    raise RuntimeError("google.genai SDK not installed. Install `google-genai` and try again.")
+RuntimeError: google.genai SDK not installed. Install `google-genai` and try again.
+2026-05-15 16:00:23,056 INFO {"event": "api_error", "user": 1, "prompt_hash": "39c1088b"}
+2026-05-15 16:00:23,864 INFO {"event": "mock_used", "user": 1, "prompt_hash": "39c1088b"}
+2026-05-15 16:03:19,036 INFO {"event": "api_call_start", "user": 1, "prompt_hash": "27a84712", "api_key_masked": "***********************************pu-0"}
+2026-05-15 16:03:19,040 ERROR api_error
+Traceback (most recent call last):
+  File "c:\Users\Lenovo\Downloads\studyplanner\streamlit_app\ai_helper.py", line 66, in _call_genai_stream
+    from google import genai as genai
+ImportError: cannot import name 'genai' from 'google' (unknown location)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\Lenovo\Downloads\studyplanner\streamlit_app\ai_helper.py", line 183, in generate_ai_response
+    for chunk in _call_genai_stream(api_key, final_prompt):
+  File "c:\Users\Lenovo\Downloads\studyplanner\streamlit_app\ai_helper.py", line 68, in _call_genai_stream
+    raise RuntimeError("google.genai SDK not installed. Install `google-genai` and try again.")
+RuntimeError: google.genai SDK not installed. Install `google-genai` and try again.
+2026-05-15 16:03:19,043 INFO {"event": "api_error", "user": 1, "prompt_hash": "27a84712"}
+2026-05-15 16:03:19,849 INFO {"event": "mock_used", "user": 1, "prompt_hash": "27a84712"}
+2026-05-15 16:05:03,835 INFO {"event": "api_call_start", "user": 1, "prompt_hash": "50ae61e8", "api_key_masked": "***********************************FCdU"}
+2026-05-15 16:05:03,837 ERROR api_error
+Traceback (most recent call last):
+  File "c:\Users\Lenovo\Downloads\studyplanner\streamlit_app\ai_helper.py", line 66, in _call_genai_stream
+    from google import genai as genai
+ImportError: cannot import name 'genai' from 'google' (unknown location)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\Lenovo\Downloads\studyplanner\streamlit_app\ai_helper.py", line 183, in generate_ai_response
+    for chunk in _call_genai_stream(api_key, final_prompt):
+  File "c:\Users\Lenovo\Downloads\studyplanner\streamlit_app\ai_helper.py", line 68, in _call_genai_stream
+    raise RuntimeError("google.genai SDK not installed. Install `google-genai` and try again.")
+RuntimeError: google.genai SDK not installed. Install `google-genai` and try again.
+2026-05-15 16:05:03,840 INFO {"event": "api_error", "user": 1, "prompt_hash": "50ae61e8"}
+2026-05-15 16:05:04,649 INFO {"event": "mock_used", "user": 1, "prompt_hash": "50ae61e8"}
+2026-05-15 16:05:13,426 INFO Training model type=rf rows=24
+2026-05-15 16:05:13,690 INFO {"event": "model_trained", "model_path": "c:\\Users\\Lenovo\\Downloads\\studyplanner\\streamlit_app\\models\\student_performance.joblib", "metrics": {"rmse": 5.3076423870051155, "r2": 0.0}}
+2026-05-15 16:05:45,532 INFO {"event": "api_call_start", "user": 1, "prompt_hash": "fa616952", "api_key_masked": "***********************************FCdU"}
+2026-05-15 16:05:45,536 ERROR api_error
+Traceback (most recent call last):
+  File "c:\Users\Lenovo\Downloads\studyplanner\streamlit_app\ai_helper.py", line 66, in _call_genai_stream
+    from google import genai as genai
+ImportError: cannot import name 'genai' from 'google' (unknown location)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\Lenovo\Downloads\studyplanner\streamlit_app\ai_helper.py", line 183, in generate_ai_response
+    for chunk in _call_genai_stream(api_key, final_prompt):
+  File "c:\Users\Lenovo\Downloads\studyplanner\streamlit_app\ai_helper.py", line 68, in _call_genai_stream
+    raise RuntimeError("google.genai SDK not installed. Install `google-genai` and try again.")
+RuntimeError: google.genai SDK not installed. Install `google-genai` and try again.
+2026-05-15 16:05:45,538 INFO {"event": "api_error", "user": 1, "prompt_hash": "fa616952"}
+2026-05-15 16:05:46,348 INFO {"event": "mock_used", "user": 1, "prompt_hash": "fa616952"}
+2026-05-30 11:12:41,596 INFO {"event": "ml_prepare", "user": 1, "prompt_hash": "9122f35c", "pred": 88.5}
+2026-05-30 11:12:42,259 INFO {"event": "ml_complete", "user": 1, "prompt_hash": "9122f35c", "duration": 0.662834882736206}
+2026-05-30 11:12:42,266 INFO {"event": "api_call_start", "user": 1, "prompt_hash": "3d098ea1", "api_key_masked": "********_KEY"}
+2026-05-30 11:12:42,268 INFO {"event": "api_call_end", "user": 1, "prompt_hash": "3d098ea1", "duration": 0.0010023117065429688}
+2026-05-30 11:12:43,072 INFO {"event": "mock_used", "user": 1, "prompt_hash": "fdf58466"}
+2026-05-30 11:13:02,595 INFO {"event": "ml_prepare", "user": 1, "prompt_hash": "f4cd5de8", "pred": 12.44}
+2026-05-30 11:13:03,471 INFO {"event": "ml_complete", "user": 1, "prompt_hash": "f4cd5de8", "duration": 0.898306131362915}
+2026-05-30 11:29:26,244 INFO {"event": "ml_prepare", "user": 1, "prompt_hash": "9122f35c", "pred": 88.5}
+2026-05-30 11:29:27,144 INFO {"event": "ml_complete", "user": 1, "prompt_hash": "9122f35c", "duration": 0.8991186618804932}
+2026-05-30 11:29:27,148 INFO {"event": "api_call_start", "user": 1, "prompt_hash": "3d098ea1", "api_key_masked": "********_KEY"}
+2026-05-30 11:29:27,148 INFO {"event": "api_call_end", "user": 1, "prompt_hash": "3d098ea1", "duration": 0.0}
+2026-05-30 11:29:28,002 INFO {"event": "mock_used", "user": 1, "prompt_hash": "fdf58466"}
+2026-05-30 11:29:39,363 INFO {"event": "ml_prepare", "user": 1, "prompt_hash": "9122f35c", "pred": 88.5}
+2026-05-30 11:29:40,332 INFO {"event": "ml_complete", "user": 1, "prompt_hash": "9122f35c", "duration": 0.96950364112854}
+2026-05-30 11:29:40,344 INFO {"event": "api_call_start", "user": 1, "prompt_hash": "3d098ea1", "api_key_masked": "********_KEY"}
+2026-05-30 11:29:40,344 INFO {"event": "api_call_end", "user": 1, "prompt_hash": "3d098ea1", "duration": 0.0005345344543457031}
+2026-05-30 11:29:41,153 INFO {"event": "mock_used", "user": 1, "prompt_hash": "fdf58466"}
+2026-05-30 11:29:55,093 INFO {"event": "ml_prepare", "user": 1, "prompt_hash": "f4cd5de8", "pred": 12.44}
+2026-05-30 11:29:56,128 INFO {"event": "ml_complete", "user": 1, "prompt_hash": "f4cd5de8", "duration": 1.0546462535858154}
+2026-05-30 11:35:07,697 INFO {"event": "ml_prepare", "user": 1, "prompt_hash": "00a14e45", "pred": 12.44}
+2026-05-30 11:35:08,811 INFO {"event": "ml_complete", "user": 1, "prompt_hash": "00a14e45", "duration": 1.1476025581359863}
+2026-05-30 11:35:20,422 INFO {"event": "api_call_start", "user": 1, "prompt_hash": "8f434346", "api_key_masked": "***********************************FCdU"}
+2026-05-30 11:35:20,426 ERROR api_error
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Downloads\studyplanner\streamlit_app\ai_helper.py", line 66, in _call_genai_stream
+    from google import genai as genai
+ImportError: cannot import name 'genai' from 'google' (unknown location)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Downloads\studyplanner\streamlit_app\ai_helper.py", line 186, in generate_ai_response
+    for chunk in _call_genai_stream(api_key, final_prompt):
+  File "C:\Users\Lenovo\Downloads\studyplanner\streamlit_app\ai_helper.py", line 68, in _call_genai_stream
+    raise RuntimeError("google.genai SDK not installed. Install `google-genai` and try again.")
+RuntimeError: google.genai SDK not installed. Install `google-genai` and try again.
+2026-05-30 11:35:20,429 INFO {"event": "api_error", "user": 1, "prompt_hash": "8f434346"}
+2026-05-30 11:35:21,234 INFO {"event": "mock_used", "user": 1, "prompt_hash": "8f434346"}
+2026-05-30 11:36:46,604 INFO {"event": "ml_prepare", "user": 1, "prompt_hash": "9122f35c", "pred": 88.5}
+2026-05-30 11:36:47,568 INFO {"event": "ml_complete", "user": 1, "prompt_hash": "9122f35c", "duration": 0.9642741680145264}
+2026-05-30 11:36:47,572 INFO {"event": "api_call_start", "user": 1, "prompt_hash": "3d098ea1", "api_key_masked": "********_KEY"}
+2026-05-30 11:36:47,573 INFO {"event": "api_call_end", "user": 1, "prompt_hash": "3d098ea1", "duration": 0.0}
+2026-05-30 11:36:48,379 INFO {"event": "mock_used", "user": 1, "prompt_hash": "fdf58466"}
+2026-05-30 11:37:10,420 INFO {"event": "ml_prepare", "user": 1, "prompt_hash": "f4cd5de8", "pred": 12.44}
+2026-05-30 11:37:11,530 INFO {"event": "ml_complete", "user": 1, "prompt_hash": "f4cd5de8", "duration": 1.1443812847137451}
+2026-05-30 11:39:03,172 INFO {"event": "api_call_start", "user": 1, "prompt_hash": "8f434346", "api_key_masked": "***********************************FCdU"}
+2026-05-30 11:39:09,186 ERROR api_error
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Downloads\studyplanner\streamlit_app\ai_helper.py", line 186, in generate_ai_response
+    for chunk in _call_genai_stream(api_key, final_prompt):
+  File "C:\Users\Lenovo\Downloads\studyplanner\streamlit_app\ai_helper.py", line 88, in _call_genai_stream
+    raise RuntimeError("Installed google.genai SDK doesn't expose a supported generate API")
+RuntimeError: Installed google.genai SDK doesn't expose a supported generate API
+2026-05-30 11:39:09,187 INFO {"event": "api_error", "user": 1, "prompt_hash": "8f434346"}
+2026-05-30 11:39:09,998 INFO {"event": "mock_used", "user": 1, "prompt_hash": "8f434346"}
+2026-05-30 11:39:20,333 INFO {"event": "api_call_start", "user": 1, "prompt_hash": "075a1041", "api_key_masked": "***********************************FCdU"}
+2026-05-30 11:39:21,292 ERROR api_error
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Downloads\studyplanner\streamlit_app\ai_helper.py", line 186, in generate_ai_response
+    for chunk in _call_genai_stream(api_key, final_prompt):
+  File "C:\Users\Lenovo\Downloads\studyplanner\streamlit_app\ai_helper.py", line 88, in _call_genai_stream
+    raise RuntimeError("Installed google.genai SDK doesn't expose a supported generate API")
+RuntimeError: Installed google.genai SDK doesn't expose a supported generate API
+2026-05-30 11:39:21,295 INFO {"event": "api_error", "user": 1, "prompt_hash": "075a1041"}
+2026-05-30 11:39:22,098 INFO {"event": "mock_used", "user": 1, "prompt_hash": "075a1041"}
+2026-05-30 11:44:01,554 INFO {"event": "ml_prepare", "user": 1, "prompt_hash": "8f434346", "pred": 12.44}
+2026-05-30 11:44:02,558 INFO {"event": "ml_complete", "user": 1, "prompt_hash": "8f434346", "duration": 1.0537323951721191}
+2026-05-30 11:44:15,175 INFO {"event": "ml_prepare", "user": 1, "prompt_hash": "62e74c23", "pred": 12.44}
+2026-05-30 11:44:15,962 INFO {"event": "ml_complete", "user": 1, "prompt_hash": "62e74c23", "duration": 0.8642187118530273}
+2026-05-30 11:53:37,861 ERROR ollama_error
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Downloads\studyplanner\streamlit_app\ai_helper.py", line 130, in generate_ai_response
+    import ollama
+ModuleNotFoundError: No module named 'ollama'
+2026-05-30 11:53:37,862 INFO {"event": "ollama_error", "user": 1, "prompt_hash": "075a1041", "error": "No module named 'ollama'"}
+2026-05-30 11:53:37,863 INFO {"event": "api_call_start", "user": 1, "prompt_hash": "075a1041", "api_key_masked": "***********************************FCdU"}
+2026-05-30 11:53:39,699 ERROR api_error
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Downloads\studyplanner\streamlit_app\ai_helper.py", line 180, in generate_ai_response
+    for chunk in _call_genai_stream(api_key, final_prompt):
+  File "C:\Users\Lenovo\Downloads\studyplanner\streamlit_app\ai_helper.py", line 88, in _call_genai_stream
+    raise RuntimeError("Installed google.genai SDK doesn't expose a supported generate API")
+RuntimeError: Installed google.genai SDK doesn't expose a supported generate API
+2026-05-30 11:53:39,699 INFO {"event": "api_error", "user": 1, "prompt_hash": "075a1041"}
+2026-05-30 11:53:40,507 INFO {"event": "mock_used", "user": 1, "prompt_hash": "075a1041"}
+2026-05-30 12:20:59,496 INFO Training model type=rf rows=24
+2026-05-30 12:20:59,617 INFO {"event": "model_trained", "model_path": "C:\\Users\\Lenovo\\Downloads\\studyplanner\\streamlit_app\\models\\student_performance.joblib", "metrics": {"rmse": 1.6713716921538824, "r2": 0.0}}
+2026-05-30 12:21:09,278 INFO {"event": "api_call_start", "user": 1, "prompt_hash": "8f434346", "api_key_masked": "*************************************************SEKg"}
+2026-05-30 12:21:10,471 ERROR api_error
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Downloads\studyplanner\streamlit_app\ai_helper.py", line 186, in generate_ai_response
+    for chunk in _call_genai_stream(api_key, final_prompt):
+  File "C:\Users\Lenovo\Downloads\studyplanner\streamlit_app\ai_helper.py", line 88, in _call_genai_stream
+    raise RuntimeError("Installed google.genai SDK doesn't expose a supported generate API")
+RuntimeError: Installed google.genai SDK doesn't expose a supported generate API
+2026-05-30 12:21:10,473 INFO {"event": "api_error", "user": 1, "prompt_hash": "8f434346"}
+2026-05-30 12:21:11,280 INFO {"event": "mock_used", "user": 1, "prompt_hash": "8f434346"}
+2026-05-30 12:21:17,195 INFO {"event": "api_call_start", "user": 1, "prompt_hash": "acff4c45", "api_key_masked": "*************************************************SEKg"}
+2026-05-30 12:21:18,675 ERROR api_error
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Downloads\studyplanner\streamlit_app\ai_helper.py", line 186, in generate_ai_response
+    for chunk in _call_genai_stream(api_key, final_prompt):
+  File "C:\Users\Lenovo\Downloads\studyplanner\streamlit_app\ai_helper.py", line 88, in _call_genai_stream
+    raise RuntimeError("Installed google.genai SDK doesn't expose a supported generate API")
+RuntimeError: Installed google.genai SDK doesn't expose a supported generate API
+2026-05-30 12:21:18,676 INFO {"event": "api_error", "user": 1, "prompt_hash": "acff4c45"}
+2026-05-30 12:21:19,603 INFO {"event": "mock_used", "user": 1, "prompt_hash": "acff4c45"}
+2026-05-30 12:30:07,511 INFO {"event": "api_call_start", "user": 1, "prompt_hash": "eb7b6c2a", "api_key_masked": "*************************************************SEKg"}
+2026-05-30 12:30:23,616 ERROR api_error
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Downloads\studyplanner\streamlit_app\ai_helper.py", line 209, in generate_ai_response
+    for chunk in gen:
+  File "C:\Users\Lenovo\Downloads\studyplanner\streamlit_app\ai_helper.py", line 76, in _call_genai_stream
+    for chunk in client.models.generate_content_stream(model="gemini-2.5-flash", contents=final_prompt):
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\google\genai\models.py", line 6632, in generate_content_stream
+    for chunk in response:
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\google\genai\models.py", line 4998, in _generate_content_stream
+    for response in self._api_client.request_streamed(
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\google\genai\_api_client.py", line 1628, in request_streamed
+    session_response = self._request(http_request, http_options, stream=True)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\google\genai\_api_client.py", line 1404, in _request
+    return self._retry(self._request_once, http_request, stream)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\tenacity\__init__.py", line 470, in __call__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\tenacity\__init__.py", line 371, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\tenacity\__init__.py", line 413, in exc_check
+    raise retry_exc.reraise()
+          ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\tenacity\__init__.py", line 184, in reraise
+    raise self.last_attempt.result()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\tenacity\__init__.py", line 473, in __call__
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\google\genai\_api_client.py", line 1381, in _request_once
+    errors.APIError.raise_for_response(response)
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\google\genai\errors.py", line 155, in raise_for_response
+    cls.raise_error(response.status_code, response_json, response)
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\google\genai\errors.py", line 186, in raise_error
+    raise ServerError(status_code, response_json, response)
+google.genai.errors.ServerError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+2026-05-30 12:30:23,632 INFO {"event": "api_error", "user": 1, "prompt_hash": "eb7b6c2a"}
+2026-05-30 12:30:24,151 INFO {"event": "api_call_start", "user": 1, "prompt_hash": "62e74c23", "api_key_masked": "*************************************************SEKg"}
+2026-05-30 12:30:24,435 INFO {"event": "mock_used", "user": 1, "prompt_hash": "eb7b6c2a"}
+2026-05-30 12:30:37,622 INFO {"event": "api_call_end", "user": 1, "prompt_hash": "62e74c23", "duration": 13.471641540527344}
+2026-05-30 12:30:57,435 INFO {"event": "api_call_start", "user": 1, "prompt_hash": "c8897ac6", "api_key_masked": "*************************************************SEKg"}
+2026-05-30 12:31:12,778 INFO {"event": "api_call_end", "user": 1, "prompt_hash": "c8897ac6", "duration": 15.343130826950073}
+2026-05-30 12:34:20,316 INFO {"event": "api_call_start", "user": 1, "prompt_hash": "ec19d1ce", "api_key_masked": "*************************************************SEKg"}
+2026-05-30 12:34:26,716 INFO {"event": "api_call_end", "user": 1, "prompt_hash": "ec19d1ce", "duration": 6.399032354354858}
+2026-05-30 12:34:36,383 INFO {"event": "api_call_start", "user": 1, "prompt_hash": "2591ca78", "api_key_masked": "*************************************************SEKg"}
+2026-05-30 12:34:41,825 INFO {"event": "api_call_end", "user": 1, "prompt_hash": "2591ca78", "duration": 5.44164252281189}

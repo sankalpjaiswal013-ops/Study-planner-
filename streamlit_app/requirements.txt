@@ -1,0 +1,12 @@
+streamlit
+pandas
+bcrypt
+plotly
+openai
+fpdf
+streamlit-extras
+# Use the new Google GenAI SDK (mandatory)
+google-genai
+pytest
+scikit-learn
+joblib
