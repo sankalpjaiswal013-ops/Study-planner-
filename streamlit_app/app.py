@@ -215,4 +215,25 @@ if st.sidebar.button("Logout"):
     st.rerun()
 
 if st.session_state.user_id:
+    st.sidebar.divider()
+    with st.sidebar.expander("➕ Quick Add Task"):
+        with st.form("quick_add_task_form", clear_on_submit=True):
+            new_subject = st.text_input("Subject", placeholder="e.g. Math")
+            new_topic = st.text_input("Topic", placeholder="e.g. Algebra")
+            new_due_date = st.date_input("Due Date")
+            submitted = st.form_submit_button("Add Task")
+            if submitted:
+                if new_subject and new_topic:
+                    conn = get_db_connection()
+                    c = conn.cursor()
+                    c.execute("INSERT INTO tasks (user_id, subject, topic, difficulty, estimated_mins, due_date, created_at) VALUES (?, ?, ?, ?, ?, ?, ?)",
+                              (st.session_state.user_id, new_subject, new_topic, "Medium", 60, new_due_date.strftime("%Y-%m-%d"), datetime.now().strftime("%Y-%m-%d %H:%M:%S")))
+                    conn.commit()
+                    conn.close()
+                    st.success("Task added!")
+                    st.rerun()
+                else:
+                    st.error("Please fill subject and topic.")
+
+if st.session_state.user_id:
     show_dashboard(st.session_state.user_id)
